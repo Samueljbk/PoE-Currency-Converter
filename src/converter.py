@@ -11,8 +11,8 @@ def get_current_rates():
     
     response = requests.get(POE_NINJA_URL, params=params)
     
-    pprint(f"Status Code: {response.status_code}")
-    pprint(f"Response Content: {response.json()}")
+    print(f"Status Code: {response.status_code}")
+    print(json.dumps(response.json(), indent=2))
 
 if __name__ == "__main__":
     get_current_rates()
