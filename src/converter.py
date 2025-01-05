@@ -11,6 +11,10 @@ def get_current_rates():
     
     response = requests.get(POE_NINJA_URL, params=params)
     
+    currency_rates = {}
+    
+    response_data = response.json()
+    
     print(f"Status Code: {response.status_code}")
     print(json.dumps(response.json(), indent=2))
 
