@@ -19,7 +19,6 @@ def get_current_rates():
         chaos_value = currency['chaosEquivalent']
         currency_rates[currency_name] = chaos_value
         
-            # Let's print some common currencies people often trade
     common_currencies = [
         "Divine Orb",
         "Exalted Orb",
@@ -29,6 +28,7 @@ def get_current_rates():
     ]
     
     print("\nCurrent Currency Values (in Chaos Orbs):")
+    
     for currency in common_currencies:
         if currency in currency_rates:
             # Format the value to 2 decimal places for readability
@@ -37,6 +37,5 @@ def get_current_rates():
     
     return currency_rates
 
-    pprint()
 if __name__ == "__main__":
     get_current_rates()
