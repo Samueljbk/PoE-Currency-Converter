@@ -11,3 +11,6 @@ def get_current_rates():
     
     print(f"Status Code: {response.status_code}")
     print(f"Response Content: {response.json()}")
+
+if __name__ == "__main__":
+    get_current_rates()
