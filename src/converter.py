@@ -31,7 +31,7 @@ def get_current_rates():
     
     for currency in common_currencies:
         if currency in currency_rates:
-            #Format the value to 2 decimal places for readability
+            # Format the value to 2 decimal places for readability
             value = currency_rates[currency]
             print(f"{currency}: {value:.2f} chaos")
     
