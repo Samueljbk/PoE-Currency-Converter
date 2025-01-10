@@ -37,5 +37,22 @@ def get_current_rates():
     
     return currency_rates
 
+def convert_currency(amount, from_currency, to_currency, rates):
+    # 1. Check if both currencies exist in our rates
+    # 2. Convert from the starting currency to chaos
+    # 3. Then convert from chaos to the target currency
+    pass
+
+def main():
+    # 1. Get the current rates
+    rates = get_current_rates()
+    
+    # 2. Get user input for:
+    #    - Amount they want to convert
+    #    - Currency they're converting from
+    #    - Currency they're converting to
+    
+    # 3. Show the result
+
 if __name__ == "__main__":
     get_current_rates()
